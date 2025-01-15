@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Ranjane R - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Shiva Ranjane R</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">My Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <img src="images/about.jpeg" alt="Your Name" class="welcome-image"> <!-- Update the image path -->
+        <div class="welcome-text">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am pursuing a Bachelor’s degree in Computer
+                Science and Engineering at the Madras Institute of
+                Technology, Anna University. I am passionate about
+                learning and exploring new technologies, with a strong
+                interest in practical applications and emerging trends.
+                I excel in problem-solving, teamwork, and proactively
+                tackling challenges.
+            </p>
+            <button class="cv-button" onclick="openCV()">View/Download CV</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shiva Ranjane R. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function openCV() {
+            // Replace 'path/to/your/cv.pdf' with the actual path to your CV PDF file
+            const cvPath = 'Shiva_Ranjane_Resume.pdf'; // Update this path
+            window.open(cvPath, 'CV', 'width=600,height=400,scrollbars=yes');
+        }
+    </script>
+</body>
+</html>
